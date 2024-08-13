@@ -29,6 +29,12 @@ function test(states) {
   }
 
   loop(); // Start the loop
+
+  function reflex_agent(location, state){
+        if (state=="DIRTY") return "CLEAN";
+        else if (location=="A") return "RIGHT";
+        else if (location=="B") return "LEFT";
+    }
 }
 
 var states = ["A","DIRTY","DIRTY"];
